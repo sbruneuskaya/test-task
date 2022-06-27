@@ -1,0 +1,39 @@
+@import './../../assets/common/vars.scss';
+
+.container {
+  position: relative;
+  padding: 32.74px 0 24px;
+  width: 474.37px;
+  height: 597.21px;
+  background: $white;
+  box-shadow: 0 11.6189px 124.28px rgba(37, 72, 153, 0.17);
+  border-radius: 23.2377px;
+  z-index: 1;
+
+  @media screen and (max-width: 321px){
+    width: 290px;
+    height: 500px;
+    padding: 15px 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 475px;
+    height: 593px;
+    left: 0;
+    top: 0;
+    border: 2px solid $white;
+    border-radius: 23.24px;
+    transform: rotate(2deg);
+
+    @media screen and (max-width: 321px){
+      width: 290px;
+      height: 500px;
+    }
+  }
+}
+

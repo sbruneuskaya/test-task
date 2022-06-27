@@ -1,0 +1,25 @@
+@import './../../../assets/common/vars.scss';
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 410px;
+  padding: 0 32.05px 0 31.68px;
+
+  @media screen and (max-width: 321px){
+    padding: 0 15px 0 15px;
+  }
+}
+
+.title {
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.0823px;
+  line-height: 32px;
+  color: $light-black;
+
+  @media screen and (max-width: 321px){
+    font-size: 17px;
+  }
+}

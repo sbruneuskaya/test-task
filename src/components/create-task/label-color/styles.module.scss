@@ -1,0 +1,106 @@
+@import './../../../assets/common/vars.scss';
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 40.12px;
+  padding-left: 31.68px;
+
+  @media screen and (max-width: 321px) {
+    padding-left: 15px;
+  }
+}
+
+.containerLabel {
+  margin-right: 32px;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $gray;
+}
+
+.groupCheckbox {
+  display: flex;
+}
+
+.checkbox {
+  display: none;
+
+  & + label:before {
+    content: "\2713";
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-right: 12px;
+    transition: color ease .3s;
+    background: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.wrapperCheckbox {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+
+  &:nth-child(1) {
+    background: $dark-gray-secondary;
+  }
+
+  &:nth-child(2) {
+    background: $dark-blue;
+  }
+
+  &:nth-child(3) {
+    background: $light-red;
+  }
+
+  &:nth-child(4) {
+    background: $light-black;
+  }
+
+  &:nth-child(5) {
+    background: $dark-yellow;
+  }
+
+  & .checkbox:checked + label:before {
+    color: white;
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 0;
+  }
+
+  &:nth-child(1) .checkbox:checked + label:before {
+    border: 1px solid $dark-gray-secondary;
+  }
+
+  &:nth-child(2) .checkbox:checked + label:before {
+    border: 1px solid $dark-blue;
+  }
+
+  &:nth-child(3) .checkbox:checked + label:before {
+    border: 1px solid $light-red;
+  }
+
+  &:nth-child(4) .checkbox:checked + label:before {
+    border: 1px solid $light-black;
+  }
+
+  &:nth-child(5) .checkbox:checked + label:before {
+    border: 1px solid $dark-yellow;
+  }
+}

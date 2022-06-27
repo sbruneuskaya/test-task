@@ -1,0 +1,74 @@
+@import './../../../assets/common/vars.scss';
+
+.container {
+  padding: 0 23.05px;
+  margin-top: 33.68px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+
+  @media screen and (max-width: 321px) {
+    padding: 0 11px;
+    margin-top: 15px;
+  }
+
+  &::after {
+    content: url("./../../../assets/images/arrow.svg");
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    top: 30%;
+    right: 8%;
+
+    @media screen and (max-width: 321px) {
+      top: 28%;
+      right: 10%;
+    }
+  }
+
+  &::before {
+    content: url("./../../../assets/images/user.svg");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    top: 30%;
+    left: 7%;
+
+    @media screen and (max-width: 321px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0.960366px solid rgba(86, 103, 137, 0.26);
+  border-radius: 7.68293px;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.3659px;
+  line-height: 20px;
+  width: 428.27px;
+  height: 50px;
+  outline: none;
+  padding: 11.28px 44.95px;
+  color: $gray;
+  cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  @media screen and (max-width: 321px) {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    padding: 6px 40px;
+  }
+}
+

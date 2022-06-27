@@ -1,0 +1,27 @@
+@import './../../../../assets/common/vars.scss';
+
+.wrapper{
+  position: relative;
+}
+
+.text{
+  border: none;
+  border-bottom: 1px solid $gray;
+  width: 100%;
+  outline: none;
+  padding-right: 70px;
+  resize: none;
+  height: 44px;
+}
+
+.userType{
+  position: absolute;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #757575;
+  bottom: 50%;
+  right: 0;
+}

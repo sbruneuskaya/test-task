@@ -1,0 +1,70 @@
+@import './../../../../assets/common/vars.scss';
+
+.container {
+  position: relative;
+
+  &::before {
+    content: url("./../../../../assets/images/calendar.svg");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 18%;
+    left: 8%;
+
+    @media screen and (max-width: 321px){
+      width: 12px;
+      height: 12px;
+      top: 14%;
+    }
+  }
+
+  &::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: $white;
+    position: absolute;
+    top: 22%;
+    right: 1%;
+
+    @media screen and (max-width: 321px){
+      top: 23%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+
+
+
+.date {
+  border: 0.960366px solid rgba(86, 103, 137, 0.26);
+  border-radius: 7.68293px;
+  width: 201.5px;
+  height: 50px;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.3659px;
+  line-height: 20px;
+  color: $gray;
+  padding: 14.48px 0 14.48px 44.95px;
+  outline: none;
+  margin-bottom: 22.68px;
+  cursor: pointer;
+
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  @media screen and (max-width: 321px){
+    width: 100px;
+    height: 40px;
+    padding: 7px 0 7px 22px;
+    font-size: 9px;
+  }
+}
+
+
+

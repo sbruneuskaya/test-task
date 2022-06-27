@@ -1,0 +1,20 @@
+@import './../../../assets/common/vars.scss';
+
+.wrapper{
+  padding: 0 31.68px;
+  margin-top: 36.12px;
+  width: 100%;
+}
+
+.clickDescription {
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  background: transparent;
+  border: none;
+  color: $gray;
+  margin-top: 25.56px;
+  cursor: pointer;
+}

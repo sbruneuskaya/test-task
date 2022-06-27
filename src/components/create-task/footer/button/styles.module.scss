@@ -1,0 +1,27 @@
+@import './../../../../assets/common/vars.scss';
+
+.container {
+  width: 179.54px;
+  height: 55.45px;
+  background: $light-blue;
+  border-radius: 10.561px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media screen and (max-width: 321px) {
+    width: 90px;
+    height: 27px;
+  }
+
+  &:first-child {
+    background: $dark-white;
+    color: rgba(21, 25, 32, 0.5);
+  }
+}
+

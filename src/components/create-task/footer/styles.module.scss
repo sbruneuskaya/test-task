@@ -1,0 +1,17 @@
+@import './../../../assets/common/vars.scss';
+
+.wrapper{
+  border-top: 1px solid $light-gray-secondary;
+  padding: 26px 47.65px 24px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+
+  @media screen and (max-width: 321px){
+    padding: 13px 24px 12px;
+    margin-top: 13px;
+    width: 80%;
+  }
+}
