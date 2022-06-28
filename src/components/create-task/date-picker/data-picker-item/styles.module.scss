@@ -39,6 +39,9 @@
 
 
 .date {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   border: 0.960366px solid rgba(86, 103, 137, 0.26);
   border-radius: 7.68293px;
   width: 201.5px;
@@ -54,6 +57,7 @@
   margin-bottom: 22.68px;
   cursor: pointer;
   background: $white;
+
 
   &::-webkit-inner-spin-button {
     display: none;
