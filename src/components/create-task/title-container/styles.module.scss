@@ -6,7 +6,7 @@
   max-width: 410px;
   padding: 0 32.05px 0 31.68px;
 
-  @media screen and (max-width: 321px){
+  @media screen and (max-width: 475px){
     padding: 0 15px 0 15px;
   }
 }
@@ -19,7 +19,7 @@
   line-height: 32px;
   color: $light-black;
 
-  @media screen and (max-width: 321px){
+  @media screen and (max-width: 475px){
     font-size: 17px;
   }
 }

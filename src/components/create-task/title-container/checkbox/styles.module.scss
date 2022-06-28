@@ -21,7 +21,7 @@
     box-shadow: inset 0 2px 3px rgba(0, 0, 0, .4);
     transition: .2s;
 
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 475px) {
       top: 10px;
       width: 23px;
       height: 14.5px;
@@ -40,7 +40,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
     transition: .2s;
 
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 475px) {
       top: 11px;
       width: 11.5px;
       height: 11.5px;
@@ -54,7 +54,7 @@
   &:checked + label:after {
     left: 21.12px;
 
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 475px) {
       left: 10px;
     }
   }
